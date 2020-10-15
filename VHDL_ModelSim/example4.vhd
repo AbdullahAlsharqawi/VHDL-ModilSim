@@ -1,0 +1,13 @@
+
+ENTITY and2 IS
+  PORT(a,b :IN bit;
+  c:OUT bit);
+END ENTITY and2;
+
+ARCHITECTURE and2w OF and2 IS
+BEGIN
+  p2: PROCESS IS BEGIN
+  c <= a AND b;
+  WAIT ON a,b;
+END PROCESS p2;
+END ARCHITECTURE and2w;

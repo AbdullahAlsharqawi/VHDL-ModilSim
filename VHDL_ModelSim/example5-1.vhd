@@ -1,0 +1,20 @@
+ENTITY latch4 IS
+    PORT( d : IN bit_vector (3 DOWNTO 0);
+      en,clk : IN bit;
+      q : OUT bit_vector (3 DOWNTO 0));
+  END ENTITY latch4;
+  
+  
+ARCHITECTURE behave OF latch4 IS BEGIN 
+  p2: PROCESS IS
+    VARIABLE x : bit_vector (3 DOWNTO 0);
+  BEGIN
+    IF en='1' AND clk='1' THEN
+    x := d;
+    END IF;
+    q<=x;
+  WAIT ON en,clk,d;
+END PROCESS p2;
+END ARCHITECTURE behave;
+
+    

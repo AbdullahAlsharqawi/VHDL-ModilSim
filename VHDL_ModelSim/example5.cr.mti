@@ -1,0 +1,13 @@
+E:/iti/VHDL_ModelSim/example5-1.vhd {1 {vcom -work work -2002 -explicit -vopt E:/iti/VHDL_ModelSim/example5-1.vhd
+Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+-- Loading package STANDARD
+-- Compiling entity latch4
+-- Compiling architecture behave of latch4
+
+} {} {}} E:/iti/VHDL_ModelSim/example4.vhd {1 {vcom -work work -2002 -explicit -vopt E:/iti/VHDL_ModelSim/example4.vhd
+Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+-- Loading package STANDARD
+-- Compiling entity and2
+-- Compiling architecture and2w of and2
+
+} {} {}}

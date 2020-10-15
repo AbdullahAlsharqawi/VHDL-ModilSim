@@ -1,0 +1,15 @@
+
+ENTITY latch IS
+  PORT(d, clk: IN bit;
+       q, nq: OUT bit);
+END ENTITY latch;
+
+ARCHITECTURE behave OF latch IS
+  BEGIN
+    p1: PROCESS (d,clk) IS
+    BEGIN
+      IF clk='1' THEN
+        q <= d;nq <= NOT(d);
+      END IF ;
+    END PROCESS p1;
+  END ARCHITECTURE behave;
